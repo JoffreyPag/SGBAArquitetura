@@ -9,7 +9,6 @@ package view;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
-import sgbaarquitetura.Funcionario;
 import sgbaarquitetura.Usuario;
 
 /**
