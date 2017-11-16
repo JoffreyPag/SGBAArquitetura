@@ -9,6 +9,8 @@ package view;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
+import sgbaarquitetura.Bolsista;
+import sgbaarquitetura.Pessoa;
 import sgbaarquitetura.Usuario;
 
 /**
@@ -211,8 +213,8 @@ public class TelaCadastrarFunc extends javax.swing.JFrame {
         if(resp == JOptionPane.YES_OPTION){
             //String nome, String cpf, String email, String senha, String telefone char tipoUser, String matricula
             //Bolsista bol = new Bolsista(nome, cpf, email, senha , telefone, matricula);
-            
-            Usuario u = new Usuario.Builder(nome, 'b')
+           
+            Bolsista u = new Bolsista.Builder(nome, 'b')
                     .addCpf(cpf)
                     .addEmail(email)
                     .addSenha(senha)
@@ -220,6 +222,8 @@ public class TelaCadastrarFunc extends javax.swing.JFrame {
                     .addMatricula(matricula)
                     .build();
             
+            //Pessoa p = Usuario(new Boslsita.Builer(nome, 'b').build);
+            //Bolsista p = Pessoa(Usuario(new Bolsista.Builder(nome, 'b')));
             System.out.println(u.getNome());
             
             //usuarioDAO ud = new UsuarioDAO();
